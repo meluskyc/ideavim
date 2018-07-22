@@ -77,10 +77,6 @@ public class VimTypedActionHandler implements TypedActionHandlerEx {
   }
 
   private boolean isEnabled(@NotNull Editor editor) {
-    if (VimPlugin.isEnabled()) {
-      final Lookup lookup = LookupManager.getActiveLookup(editor);
-      return lookup == null || !lookup.isFocused();
-    }
-    return false;
+    return VimPlugin.isEnabled();
   }
 }
