@@ -521,7 +521,7 @@ public class ChangeGroup {
 
     lastStrokes = new ArrayList<>(strokes);
 
-    repeatInsert(editor, context, cnt == 0 ? 0 : cnt - 1, true);
+//    repeatInsert(editor, context, cnt == 0 ? 0 : cnt - 1, true);
 
     final MarkGroup markGroup = VimPlugin.getMark();
     final int offset = editor.getCaretModel().getPrimaryCaret().getOffset();
